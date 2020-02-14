@@ -130,4 +130,4 @@ Options:
 | uglifyJs | object | `{}`| [UglifyJS options](https://github.com/mishoo/UglifyJS2)  |
 
 ## License
-Optimizer is open source, licensed under the [MIT License](https://github.com/askalione/npm-optimizer/blob/master/LICENSE).
+Optimizer is open source, licensed under the [MIT License](https://github.com/askalione/nodejs-optimizer/blob/master/LICENSE).
