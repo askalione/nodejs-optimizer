@@ -1,6 +1,6 @@
-# Optimizer
+# Nodejs-Optimizer
 
-Optimizer is a simple utility for minification css and javascript depend on environment mode.
+Nodejs-Optimizer is a simple utility for minification css and javascript depend on environment mode.
 
 # References
 - [CleanCSS](https://github.com/jakubpawlowicz/clean-css)
