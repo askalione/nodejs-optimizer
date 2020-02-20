@@ -15,9 +15,9 @@ Default usage:
 ```javascript
 const optimizer = required('@askalione/optimizer');
 
-var original = 'body { color: #000; }';
+const original = 'body { color: #000; }';
 
-var minified = optimizer.optimizeCss(original); // return minified css
+const minified = optimizer.optimizeCss(original); // return minified css
 ```
 
 Production/Development usage:
@@ -26,7 +26,7 @@ Production/Development usage:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'body { color: #000; }';
+const original = 'body { color: #000; }';
 
 var minified = optimizer.optimizeCss(original, PRODUCTION); // return minified css if production mode otherwise not
 ```
@@ -36,9 +36,9 @@ Options usage:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'body { color: #000; }';
+const original = 'body { color: #000; }';
 
-var minified = optimizer.optimizeCss(original, PRODUCTION, 
+const minified = optimizer.optimizeCss(original, PRODUCTION, 
 { 
 	cleanCss:  {
 	... // CleanCSS options
@@ -52,9 +52,9 @@ Path options:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'body { color: #000; }';
+const original = 'body { color: #000; }';
 
-var minified = optimizer.optimizeCss(original, PRODUCTION, 
+const minified = optimizer.optimizeCss(original, PRODUCTION, 
 { 
 	path: 'css/site.css'
 }); // return object { path, css } where path has minification suffix if css was minified. Css minified if production mode otherwise not. E.g path = 'css/site.min.css' if minified otherwise 'css/site.css'.
@@ -76,9 +76,9 @@ Default usage:
 ```javascript
 const optimizer = required('@askalione/optimizer');
 
-var original = 'var a = function() {};';
+const original = 'var a = function() {};';
 
-var minified = optimizer.optimizeJs(original); // return minified js
+const minified = optimizer.optimizeJs(original); // return minified js
 ```
 
 Production/Development usage:
@@ -87,9 +87,9 @@ Production/Development usage:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'var a = function() {};';
+const original = 'var a = function() {};';
 
-var minified = optimizer.optimizeJs(original, PRODUCTION); // return minified js if production mode otherwise not
+const minified = optimizer.optimizeJs(original, PRODUCTION); // return minified js if production mode otherwise not
 ```
 Options usage:
 
@@ -97,9 +97,9 @@ Options usage:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'var a = function() {};';
+const original = 'var a = function() {};';
 
-var minified = optimizer.optimizeJs(original, PRODUCTION, 
+const minified = optimizer.optimizeJs(original, PRODUCTION, 
 { 
 	uglifyJs:  {
 	... // UglifyJS options
@@ -113,9 +113,9 @@ Path options:
 const optimizer = required('@askalione/optimizer');
 const PRODUCTION = process.env.NODE_ENV === 'production' || false;
 
-var original = 'var a = function() {};';
+const original = 'var a = function() {};';
 
-var minified = optimizer.optimizeJs(original, PRODUCTION, 
+const minified = optimizer.optimizeJs(original, PRODUCTION, 
 { 
 	path: 'js/site.js'
 }); // return object { path, js } where path has minification suffix if js was minified. Js minified if production mode otherwise not. E.g path = 'js/site.min.js' if minified otherwise 'js/site.js'.
